@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController , LoginView{
 
+    var presenter : LoginPresenter!
 
     
     @IBOutlet weak var edt_email: UITextField!
@@ -21,7 +23,10 @@ class LoginViewController: UIViewController {
            super.viewDidLoad()
            // Do any additional setup after loading the view.
    
+          presenter = LoginPresenter(self)
 
+        
+        
         let im = UIImage(named: "email")
         edt_email.setLeftView(image: im!)
 
@@ -30,103 +35,71 @@ class LoginViewController: UIViewController {
         
         
         
-    
+      FirebaseApp.configure()
         
        }
     
-    override func viewDidLayoutSubviews() {
-            if (UserDefaults.standard.isLoggedIn()){
-                    SegueHome()
-               }
-            
-    }
-       
+  
 
   
        
     @IBAction func btn_click(_ sender: Any) {
 
-        let name: String = edt_email.text ?? ""
 
-        let pass: String = edt_pass.text ?? ""
-        
-        handleLogin(name,pass)
-        //
+          presenter.inValidateLogin(email : edt_email.text!, passwrd : edt_pass.text!)
+      
     }
 
-    func handleLogin(_ email : String, _ password :String){
-        
-        if  email.isEmpty{
-            self.showToast(message: "Email is require", seconds: 1.0)
-            return
-        }
-     
-        if  password.isEmpty {
-                   self.showToast(message: "password is require", seconds: 1.0)
-                   return
-        }
-        
-        
-        let queryItems = [
-                    "email": email,
-                    "password": password
-                ]
-        
-        
-         self.showSpinner(onView: self.view)
-              let qualityOfServiceClass = DispatchQoS.QoSClass.background
-                        let backgroundQueue = DispatchQueue.global(qos: qualityOfServiceClass)
-                        backgroundQueue.async(execute: {
-        
-                             // 3: Do your networking task or background work here.
-        
-                            let url = "user/login"
-        
-                                   let req:Request = Request()
-                            
-                            req.getResponse(url: url, parameters: queryItems as [String : Any], httpMethod: .post) {(result: Results<UserBase>) in
-        
-                                DispatchQueue.main.async(execute: { () -> Void in
-        
-                                    switch result{
-                                        case .failure(let error):
+      
+    
+       func Loading() {
+             self.showSpinner(onView: self.view)
+       }
+       
+       func LoadingFail(msg: String) {
+              self.removeSpinner()
+              displayMessage(status : true, msg : msg)
+       }
+       
+        func LoadingSuccessfull(msg: String) {
+                   performSegue(withIdentifier: "goHome", sender: nil)
+                displayMessage(status : true, msg : msg)
+              self.removeSpinner()
 
-                                            print("Error\(error)")
-                                            self.showToast(message: "Error\(error)", seconds: 2.0)
-                                         self.removeSpinner()
-                                        case .success( let successfful):
-                                            
-                                            //move to home
-                                            self.SegueHome()
-                                            self.userSession()
-                                     
-                                            print("Created Succefully\(successfful)")
-                                            self.showToast(message:"Login Succefully", seconds: 2.0)
+       }
+       
+       
+       
+       func invalidateEmail(email: String) {
+           displayMessage(status : false, msg : email)
+           
+       }
+       
+       func invalidatePassword(password: String) {
+           print(password)
+           displayMessage(status : false, msg : password)
+       }
+       
 
-        
-                                             self.removeSpinner()
-                                            UserDefaults.standard.setLoggedIn(value: true)
-        
-                                        }
-        
-        
-                                })
+       
+
+       func displayMessage(status : Bool, msg : String ){
+              
+              var state : String!
+            if status == false {  state = "Error" }else { state = "Success"}
+              let alertController = UIAlertController(title: state,
+                                                                  message: msg,
+                                                                  preferredStyle: .alert)
+                      
+                          let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                          alertController.addAction(cancelAction)
+                          self.present(alertController, animated: true, completion: nil)
           }
-        })
-    }
-    
-    
-    func SegueHome() {
-        let myTabBar   = self.storyboard?.instantiateViewController(withIdentifier: "MainTab") as! UITabBarController
-               let appDelegate = self.view.window?.windowScene?.delegate as! SceneDelegate
-               appDelegate.window?.rootViewController = myTabBar
-                                             
-    }
-   
-    func userSession() {
-            UserDefaults.standard.set(true, forKey: "login")
-            UserDefaults.standard.synchronize()
-    }
+       
+
+
+
+     
         
     
     

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,18 +13,22 @@
 		0411CE26242177BF00AE327C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411CE24242177BF00AE327C /* Main.storyboard */; };
 		0411CE28242177C400AE327C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0411CE27242177C400AE327C /* Assets.xcassets */; };
 		0411CE2B242177C400AE327C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411CE29242177C400AE327C /* LaunchScreen.storyboard */; };
-		0452574A242C072700DDE2A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04525749242C072700DDE2A4 /* HomeViewController.swift */; };
-		0452574C242C075000DDE2A4 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452574B242C075000DDE2A4 /* HistoryViewController.swift */; };
-		0452574E242C078800DDE2A4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0452574D242C078800DDE2A4 /* ProfileViewController.swift */; };
-		04525754242CA0A600DDE2A4 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04525753242CA0A600DDE2A4 /* UserDefault.swift */; };
 		04898443242767AF002A4557 /* loadingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04898442242767AF002A4557 /* loadingExtensions.swift */; };
 		0489844524276E9B002A4557 /* toastExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489844424276E9B002A4557 /* toastExtension.swift */; };
 		04DCB32F2421A8B20023E704 /* TextFieldExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCB32E2421A8B20023E704 /* TextFieldExtentions.swift */; };
+		555FD0433EF8381B7C06D6E5 /* Pods_Payme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15F5B3A30D46A50B84BE420 /* Pods_Payme.framework */; };
 		CE88869024783EA400B63652 /* BMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88868F24783EA400B63652 /* BMHelper.swift */; };
-		CE88869224783EC700B63652 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88869124783EC700B63652 /* Request.swift */; };
-		CE888694247867C300B63652 /* BMExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE888693247867C300B63652 /* BMExtention.swift */; };
-		CE88869724786BCC00B63652 /* Bases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88869624786BCC00B63652 /* Bases.swift */; };
 		CE88869924786BE900B63652 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88869824786BE900B63652 /* user.swift */; };
+		CE88869B2478725C00B63652 /* HomeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88869A2478725C00B63652 /* HomeControllerViewController.swift */; };
+		CE88869F2478B99B00B63652 /* Payme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE88869D2478B99B00B63652 /* Payme.xcdatamodeld */; };
+		CE8886AD2478C29000B63652 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886AC2478C29000B63652 /* Request.swift */; };
+		CE8886AF2478C55500B63652 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886AE2478C55500B63652 /* RequestModel.swift */; };
+		CEC6988C247D9B6000F27037 /* loginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988B247D9B6000F27037 /* loginProtocol.swift */; };
+		CEC6988E247D9B7600F27037 /* generalLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988D247D9B7600F27037 /* generalLoading.swift */; };
+		CEC69890247D9B9700F27037 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988F247D9B9700F27037 /* LoginPresenter.swift */; };
+		CEC69893247D9E2800F27037 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC69892247D9E2800F27037 /* Utils.swift */; };
+		CEC69896247D9ECC00F27037 /* sharePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC69895247D9ECC00F27037 /* sharePreference.swift */; };
+		CEC698A2247DA78100F27037 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC698A1247DA78100F27037 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,18 +40,24 @@
 		0411CE27242177C400AE327C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0411CE2A242177C400AE327C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0411CE2C242177C400AE327C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04525749242C072700DDE2A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		0452574B242C075000DDE2A4 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		0452574D242C078800DDE2A4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		04525753242CA0A600DDE2A4 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		04898442242767AF002A4557 /* loadingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingExtensions.swift; sourceTree = "<group>"; };
 		0489844424276E9B002A4557 /* toastExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toastExtension.swift; sourceTree = "<group>"; };
 		04DCB32E2421A8B20023E704 /* TextFieldExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtentions.swift; sourceTree = "<group>"; };
+		2EDB1E038877A90685B405D7 /* Pods-Payme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Payme.debug.xcconfig"; path = "Target Support Files/Pods-Payme/Pods-Payme.debug.xcconfig"; sourceTree = "<group>"; };
+		930978355F0E59747CC96686 /* Pods-Payme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Payme.release.xcconfig"; path = "Target Support Files/Pods-Payme/Pods-Payme.release.xcconfig"; sourceTree = "<group>"; };
 		CE88868F24783EA400B63652 /* BMHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMHelper.swift; sourceTree = "<group>"; };
-		CE88869124783EC700B63652 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		CE888693247867C300B63652 /* BMExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMExtention.swift; sourceTree = "<group>"; };
-		CE88869624786BCC00B63652 /* Bases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bases.swift; sourceTree = "<group>"; };
 		CE88869824786BE900B63652 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		CE88869A2478725C00B63652 /* HomeControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewController.swift; sourceTree = "<group>"; };
+		CE88869E2478B99B00B63652 /* Payme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Payme.xcdatamodel; sourceTree = "<group>"; };
+		CE8886AC2478C29000B63652 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CE8886AE2478C55500B63652 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		CEC6988B247D9B6000F27037 /* loginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginProtocol.swift; sourceTree = "<group>"; };
+		CEC6988D247D9B7600F27037 /* generalLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generalLoading.swift; sourceTree = "<group>"; };
+		CEC6988F247D9B9700F27037 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		CEC69892247D9E2800F27037 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CEC69895247D9ECC00F27037 /* sharePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharePreference.swift; sourceTree = "<group>"; };
+		CEC698A1247DA78100F27037 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E15F5B3A30D46A50B84BE420 /* Pods_Payme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Payme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				555FD0433EF8381B7C06D6E5 /* Pods_Payme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +77,8 @@
 			children = (
 				0411CE1D242177BF00AE327C /* Payme */,
 				0411CE1C242177BF00AE327C /* Products */,
+				ECB4E4859783FFF70C8F57CB /* Pods */,
+				A5EB0AFDFC188E50B922FF96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,14 +93,15 @@
 		0411CE1D242177BF00AE327C /* Payme */ = {
 			isa = PBXGroup;
 			children = (
+				CEC69891247D9E1100F27037 /* utils */,
+				CEC69889247D9B2100F27037 /* presenter */,
 				CE88869524786B5700B63652 /* model */,
 				CE88868E24783E0800B63652 /* network */,
-				04DCB32D2421A88A0023E704 /* extensions */,
-				04BA127E2421A3C60077A5C8 /* HomeSource */,
+				04BA127E2421A3C60077A5C8 /* View */,
 				0411CE432421945100AE327C /* UIController */,
-				0411CE24242177BF00AE327C /* Main.storyboard */,
 				0411CE29242177C400AE327C /* LaunchScreen.storyboard */,
 				0411CE2C242177C400AE327C /* Info.plist */,
+				CEC698A1247DA78100F27037 /* GoogleService-Info.plist */,
 			);
 			path = Payme;
 			sourceTree = "<group>";
@@ -95,28 +109,26 @@
 		0411CE432421945100AE327C /* UIController */ = {
 			isa = PBXGroup;
 			children = (
-				0452574D242C078800DDE2A4 /* ProfileViewController.swift */,
 				0411CE22242177BF00AE327C /* LoginViewController.swift */,
-				04525749242C072700DDE2A4 /* HomeViewController.swift */,
-				0452574B242C075000DDE2A4 /* HistoryViewController.swift */,
+				CE88869A2478725C00B63652 /* HomeControllerViewController.swift */,
 			);
 			path = UIController;
 			sourceTree = "<group>";
 		};
-		04BA127E2421A3C60077A5C8 /* HomeSource */ = {
+		04BA127E2421A3C60077A5C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0411CE24242177BF00AE327C /* Main.storyboard */,
 				0411CE27242177C400AE327C /* Assets.xcassets */,
 				0411CE1E242177BF00AE327C /* AppDelegate.swift */,
 				0411CE20242177BF00AE327C /* SceneDelegate.swift */,
 			);
-			path = HomeSource;
+			path = View;
 			sourceTree = "<group>";
 		};
 		04DCB32D2421A88A0023E704 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				04525753242CA0A600DDE2A4 /* UserDefault.swift */,
 				04DCB32E2421A8B20023E704 /* TextFieldExtentions.swift */,
 				04898442242767AF002A4557 /* loadingExtensions.swift */,
 				0489844424276E9B002A4557 /* toastExtension.swift */,
@@ -124,12 +136,18 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		A5EB0AFDFC188E50B922FF96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15F5B3A30D46A50B84BE420 /* Pods_Payme.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE88868E24783E0800B63652 /* network */ = {
 			isa = PBXGroup;
 			children = (
 				CE88868F24783EA400B63652 /* BMHelper.swift */,
-				CE88869124783EC700B63652 /* Request.swift */,
-				CE888693247867C300B63652 /* BMExtention.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -137,10 +155,57 @@
 		CE88869524786B5700B63652 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				CE88869624786BCC00B63652 /* Bases.swift */,
-				CE88869824786BE900B63652 /* user.swift */,
+				CEC69894247D9E7500F27037 /* entity */,
+				CE88869D2478B99B00B63652 /* Payme.xcdatamodeld */,
+				CE8886AC2478C29000B63652 /* Request.swift */,
+				CEC69895247D9ECC00F27037 /* sharePreference.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		CEC69889247D9B2100F27037 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6988A247D9B4300F27037 /* protocol */,
+				CEC6988F247D9B9700F27037 /* LoginPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		CEC6988A247D9B4300F27037 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6988B247D9B6000F27037 /* loginProtocol.swift */,
+				CEC6988D247D9B7600F27037 /* generalLoading.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		CEC69891247D9E1100F27037 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				04DCB32D2421A88A0023E704 /* extensions */,
+				CEC69892247D9E2800F27037 /* Utils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		CEC69894247D9E7500F27037 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				CE88869824786BE900B63652 /* user.swift */,
+				CE8886AE2478C55500B63652 /* RequestModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		ECB4E4859783FFF70C8F57CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EDB1E038877A90685B405D7 /* Pods-Payme.debug.xcconfig */,
+				930978355F0E59747CC96686 /* Pods-Payme.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0411CE2F242177C400AE327C /* Build configuration list for PBXNativeTarget "Payme" */;
 			buildPhases = (
+				6FB02280627B12E5410C9DFB /* [CP] Check Pods Manifest.lock */,
 				0411CE17242177BF00AE327C /* Sources */,
 				0411CE18242177BF00AE327C /* Frameworks */,
 				0411CE19242177BF00AE327C /* Resources */,
+				A74FE7289E4A66C01127AE8C /* [CP] Embed Pods Frameworks */,
+				CEC69897247DA3FB00F27037 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -202,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0411CE2B242177C400AE327C /* LaunchScreen.storyboard in Resources */,
+				CEC698A2247DA78100F27037 /* GoogleService-Info.plist in Resources */,
 				0411CE28242177C400AE327C /* Assets.xcassets in Resources */,
 				0411CE26242177BF00AE327C /* Main.storyboard in Resources */,
 			);
@@ -209,26 +278,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FB02280627B12E5410C9DFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Payme-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74FE7289E4A66C01127AE8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Payme/Pods-Payme-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Payme/Pods-Payme-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Payme/Pods-Payme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEC69897247DA3FB00F27037 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0411CE17242177BF00AE327C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE88869724786BCC00B63652 /* Bases.swift in Sources */,
-				04525754242CA0A600DDE2A4 /* UserDefault.swift in Sources */,
-				CE88869224783EC700B63652 /* Request.swift in Sources */,
 				0411CE23242177BF00AE327C /* LoginViewController.swift in Sources */,
-				CE888694247867C300B63652 /* BMExtention.swift in Sources */,
 				CE88869924786BE900B63652 /* user.swift in Sources */,
+				CEC6988C247D9B6000F27037 /* loginProtocol.swift in Sources */,
+				CE8886AF2478C55500B63652 /* RequestModel.swift in Sources */,
 				0411CE1F242177BF00AE327C /* AppDelegate.swift in Sources */,
-				0452574E242C078800DDE2A4 /* ProfileViewController.swift in Sources */,
-				0452574C242C075000DDE2A4 /* HistoryViewController.swift in Sources */,
+				CE8886AD2478C29000B63652 /* Request.swift in Sources */,
 				04898443242767AF002A4557 /* loadingExtensions.swift in Sources */,
+				CEC69893247D9E2800F27037 /* Utils.swift in Sources */,
+				CEC6988E247D9B7600F27037 /* generalLoading.swift in Sources */,
+				CE88869F2478B99B00B63652 /* Payme.xcdatamodeld in Sources */,
+				CEC69890247D9B9700F27037 /* LoginPresenter.swift in Sources */,
+				CE88869B2478725C00B63652 /* HomeControllerViewController.swift in Sources */,
 				04DCB32F2421A8B20023E704 /* TextFieldExtentions.swift in Sources */,
 				CE88869024783EA400B63652 /* BMHelper.swift in Sources */,
 				0411CE21242177BF00AE327C /* SceneDelegate.swift in Sources */,
 				0489844524276E9B002A4557 /* toastExtension.swift in Sources */,
-				0452574A242C072700DDE2A4 /* HomeViewController.swift in Sources */,
+				CEC69896247D9ECC00F27037 /* sharePreference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -370,6 +500,7 @@
 		};
 		0411CE30242177C400AE327C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDB1E038877A90685B405D7 /* Pods-Payme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -388,6 +519,7 @@
 		};
 		0411CE31242177C400AE327C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 930978355F0E59747CC96686 /* Pods-Payme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,6 +558,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE88869D2478B99B00B63652 /* Payme.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE88869E2478B99B00B63652 /* Payme.xcdatamodel */,
+			);
+			currentVersion = CE88869E2478B99B00B63652 /* Payme.xcdatamodel */;
+			path = Payme.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0411CE13242177BF00AE327C /* Project object */;
 }
