@@ -37,11 +37,16 @@ class LoginViewController: UIViewController , LoginView{
         
       FirebaseApp.configure()
         
+      userLoggedIn()
        }
     
   
 
-  
+    func userLoggedIn(){
+        if  MemoryManager().getUser().authorization != nil ||  MemoryManager().getUser().authorization != "" {
+                   performSegue(withIdentifier: "goHome", sender: nil)
+            }
+    }
        
     @IBAction func btn_click(_ sender: Any) {
 

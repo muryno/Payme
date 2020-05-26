@@ -48,7 +48,7 @@ class LoginPresenter {
                    guard let user = response.value else { return }
                    
                 if !user.error &&  user.data != nil {
-                    
+                     MemoryManager().saveUser(usr: user.data!)
         //          print(films.data)
   
                                    if (user.data?.is_hod! == "1"){
@@ -74,7 +74,7 @@ class LoginPresenter {
                                        }
                     
                     
-                       MemoryManager().saveUser(usr: user.data!)
+                      
                        self.callBack.LoadingSuccessfull(msg : user.message)
                  //   print(" See mee oga \( MemoryManager().getUser())")
                             

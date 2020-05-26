@@ -15,11 +15,11 @@
 		0411CE2B242177C400AE327C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0411CE29242177C400AE327C /* LaunchScreen.storyboard */; };
 		04898443242767AF002A4557 /* loadingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04898442242767AF002A4557 /* loadingExtensions.swift */; };
 		0489844524276E9B002A4557 /* toastExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489844424276E9B002A4557 /* toastExtension.swift */; };
-		04DCB32F2421A8B20023E704 /* TextFieldExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCB32E2421A8B20023E704 /* TextFieldExtentions.swift */; };
+		04DCB32F2421A8B20023E704 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCB32E2421A8B20023E704 /* ViewExtension.swift */; };
 		555FD0433EF8381B7C06D6E5 /* Pods_Payme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15F5B3A30D46A50B84BE420 /* Pods_Payme.framework */; };
 		CE88869024783EA400B63652 /* BMHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88868F24783EA400B63652 /* BMHelper.swift */; };
 		CE88869924786BE900B63652 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88869824786BE900B63652 /* user.swift */; };
-		CE88869B2478725C00B63652 /* HomeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88869A2478725C00B63652 /* HomeControllerViewController.swift */; };
+		CE88869B2478725C00B63652 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE88869A2478725C00B63652 /* HomeViewController.swift */; };
 		CE88869F2478B99B00B63652 /* Payme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE88869D2478B99B00B63652 /* Payme.xcdatamodeld */; };
 		CE8886AD2478C29000B63652 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886AC2478C29000B63652 /* Request.swift */; };
 		CE8886AF2478C55500B63652 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886AE2478C55500B63652 /* RequestModel.swift */; };
@@ -42,12 +42,12 @@
 		0411CE2C242177C400AE327C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04898442242767AF002A4557 /* loadingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingExtensions.swift; sourceTree = "<group>"; };
 		0489844424276E9B002A4557 /* toastExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toastExtension.swift; sourceTree = "<group>"; };
-		04DCB32E2421A8B20023E704 /* TextFieldExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtentions.swift; sourceTree = "<group>"; };
+		04DCB32E2421A8B20023E704 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		2EDB1E038877A90685B405D7 /* Pods-Payme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Payme.debug.xcconfig"; path = "Target Support Files/Pods-Payme/Pods-Payme.debug.xcconfig"; sourceTree = "<group>"; };
 		930978355F0E59747CC96686 /* Pods-Payme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Payme.release.xcconfig"; path = "Target Support Files/Pods-Payme/Pods-Payme.release.xcconfig"; sourceTree = "<group>"; };
 		CE88868F24783EA400B63652 /* BMHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMHelper.swift; sourceTree = "<group>"; };
 		CE88869824786BE900B63652 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
-		CE88869A2478725C00B63652 /* HomeControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerViewController.swift; sourceTree = "<group>"; };
+		CE88869A2478725C00B63652 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE88869E2478B99B00B63652 /* Payme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Payme.xcdatamodel; sourceTree = "<group>"; };
 		CE8886AC2478C29000B63652 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CE8886AE2478C55500B63652 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0411CE22242177BF00AE327C /* LoginViewController.swift */,
-				CE88869A2478725C00B63652 /* HomeControllerViewController.swift */,
+				CE88869A2478725C00B63652 /* HomeViewController.swift */,
 			);
 			path = UIController;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 		04DCB32D2421A88A0023E704 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				04DCB32E2421A8B20023E704 /* TextFieldExtentions.swift */,
+				04DCB32E2421A8B20023E704 /* ViewExtension.swift */,
 				04898442242767AF002A4557 /* loadingExtensions.swift */,
 				0489844424276E9B002A4557 /* toastExtension.swift */,
 			);
@@ -353,8 +353,8 @@
 				CEC6988E247D9B7600F27037 /* generalLoading.swift in Sources */,
 				CE88869F2478B99B00B63652 /* Payme.xcdatamodeld in Sources */,
 				CEC69890247D9B9700F27037 /* LoginPresenter.swift in Sources */,
-				CE88869B2478725C00B63652 /* HomeControllerViewController.swift in Sources */,
-				04DCB32F2421A8B20023E704 /* TextFieldExtentions.swift in Sources */,
+				CE88869B2478725C00B63652 /* HomeViewController.swift in Sources */,
+				04DCB32F2421A8B20023E704 /* ViewExtension.swift in Sources */,
 				CE88869024783EA400B63652 /* BMHelper.swift in Sources */,
 				0411CE21242177BF00AE327C /* SceneDelegate.swift in Sources */,
 				0489844524276E9B002A4557 /* toastExtension.swift in Sources */,
