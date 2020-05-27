@@ -8,8 +8,9 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeControllerViewController: UIViewController {
 
+    @IBOutlet weak var txt_description: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

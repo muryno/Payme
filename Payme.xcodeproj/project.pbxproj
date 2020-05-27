@@ -29,6 +29,7 @@
 		CEC69893247D9E2800F27037 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC69892247D9E2800F27037 /* Utils.swift */; };
 		CEC69896247D9ECC00F27037 /* sharePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC69895247D9ECC00F27037 /* sharePreference.swift */; };
 		CEC698A2247DA78100F27037 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC698A1247DA78100F27037 /* GoogleService-Info.plist */; };
+		CEC698A5247E540A00F27037 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC698A4247E540A00F27037 /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		CEC69892247D9E2800F27037 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CEC69895247D9ECC00F27037 /* sharePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sharePreference.swift; sourceTree = "<group>"; };
 		CEC698A1247DA78100F27037 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEC698A4247E540A00F27037 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E15F5B3A30D46A50B84BE420 /* Pods_Payme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Payme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 		0411CE432421945100AE327C /* UIController */ = {
 			isa = PBXGroup;
 			children = (
+				CEC698A3247E53BF00F27037 /* Table view cells */,
 				0411CE22242177BF00AE327C /* LoginViewController.swift */,
 				CE88869A2478725C00B63652 /* HomeViewController.swift */,
 			);
@@ -197,6 +200,14 @@
 				CE8886AE2478C55500B63652 /* RequestModel.swift */,
 			);
 			path = entity;
+			sourceTree = "<group>";
+		};
+		CEC698A3247E53BF00F27037 /* Table view cells */ = {
+			isa = PBXGroup;
+			children = (
+				CEC698A4247E540A00F27037 /* HomeTableViewCell.swift */,
+			);
+			path = "Table view cells";
 			sourceTree = "<group>";
 		};
 		ECB4E4859783FFF70C8F57CB /* Pods */ = {
@@ -348,6 +359,7 @@
 				CE8886AF2478C55500B63652 /* RequestModel.swift in Sources */,
 				0411CE1F242177BF00AE327C /* AppDelegate.swift in Sources */,
 				CE8886AD2478C29000B63652 /* Request.swift in Sources */,
+				CEC698A5247E540A00F27037 /* HomeTableViewCell.swift in Sources */,
 				04898443242767AF002A4557 /* loadingExtensions.swift in Sources */,
 				CEC69893247D9E2800F27037 /* Utils.swift in Sources */,
 				CEC6988E247D9B7600F27037 /* generalLoading.swift in Sources */,
