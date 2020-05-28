@@ -18,15 +18,20 @@ class Utils{
     }
     
     static func Header ()-> HTTPHeaders{
+        
+          let      token = MemoryManager().getUser().authorization ?? " "
+            
+              //print("wOSS WOBI \(token)")
+
         let headers: HTTPHeaders = [
-            .authorization(username: "X-Auth-Token", password: MemoryManager().getUser().authorization ?? " "),
-                        .accept("application/json"),
-                        .accept("application/x-www-form-urlencoded")
-                   ]
+              "X-Auth-Token": token,
+              "Accept": "application/json",
+               "Accept": "application/x-www-form-urlencoded",
+          ]
         
         return headers
     }
-    
+  
     
      
 }

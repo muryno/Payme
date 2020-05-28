@@ -10,15 +10,35 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+  
+    @IBOutlet weak var back_view: UIView!
+    @IBOutlet weak var front_view: UIView!
+    @IBOutlet weak var description_view: UILabel!
+    @IBOutlet weak var dept_txt: UILabel!
+    @IBOutlet weak var date_txt: UILabel!
+    @IBOutlet weak var status_txt: UILabel!
+    @IBOutlet weak var amount_txt: UILabel!
+    
+  
+    var pendReq : Request? {
+        
+        didSet{
+            self.UpDateUi()
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    func UpDateUi(){
+        
+               back_view.layer.cornerRadius = 10.0;
+      //  front_view.roundCorners([.topRight, .bottomRight], radius: 10)
+        
+        amount_txt?.text = pendReq?.amount
+        date_txt?.text = pendReq?.date
+        dept_txt?.text = pendReq?.department
+        description_view?.text = pendReq?.request_description
 
-        // Configure the view for the selected state
     }
-
+    
 }
+

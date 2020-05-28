@@ -23,6 +23,9 @@
 		CE88869F2478B99B00B63652 /* Payme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE88869D2478B99B00B63652 /* Payme.xcdatamodeld */; };
 		CE8886AD2478C29000B63652 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886AC2478C29000B63652 /* Request.swift */; };
 		CE8886AF2478C55500B63652 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8886AE2478C55500B63652 /* RequestModel.swift */; };
+		CE8A1C72247E959A001A4270 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A1C71247E959A001A4270 /* HomePresenter.swift */; };
+		CE8A1C76247F0F83001A4270 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A1C75247F0F83001A4270 /* CoreDataStack.swift */; };
+		CE8A1C79247FD3A7001A4270 /* SavecoreRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A1C78247FD3A7001A4270 /* SavecoreRequest.swift */; };
 		CEC6988C247D9B6000F27037 /* loginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988B247D9B6000F27037 /* loginProtocol.swift */; };
 		CEC6988E247D9B7600F27037 /* generalLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988D247D9B7600F27037 /* generalLoading.swift */; };
 		CEC69890247D9B9700F27037 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988F247D9B9700F27037 /* LoginPresenter.swift */; };
@@ -52,6 +55,9 @@
 		CE88869E2478B99B00B63652 /* Payme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Payme.xcdatamodel; sourceTree = "<group>"; };
 		CE8886AC2478C29000B63652 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		CE8886AE2478C55500B63652 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		CE8A1C71247E959A001A4270 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		CE8A1C75247F0F83001A4270 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		CE8A1C78247FD3A7001A4270 /* SavecoreRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavecoreRequest.swift; sourceTree = "<group>"; };
 		CEC6988B247D9B6000F27037 /* loginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginProtocol.swift; sourceTree = "<group>"; };
 		CEC6988D247D9B7600F27037 /* generalLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generalLoading.swift; sourceTree = "<group>"; };
 		CEC6988F247D9B9700F27037 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -104,6 +110,7 @@
 				0411CE29242177C400AE327C /* LaunchScreen.storyboard */,
 				0411CE2C242177C400AE327C /* Info.plist */,
 				CEC698A1247DA78100F27037 /* GoogleService-Info.plist */,
+				CE8A1C75247F0F83001A4270 /* CoreDataStack.swift */,
 			);
 			path = Payme;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 		CE88869524786B5700B63652 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				CE8A1C77247FA362001A4270 /* coreSave */,
 				CEC69894247D9E7500F27037 /* entity */,
 				CE88869D2478B99B00B63652 /* Payme.xcdatamodeld */,
 				CE8886AC2478C29000B63652 /* Request.swift */,
@@ -166,11 +174,20 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		CE8A1C77247FA362001A4270 /* coreSave */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A1C78247FD3A7001A4270 /* SavecoreRequest.swift */,
+			);
+			path = coreSave;
+			sourceTree = "<group>";
+		};
 		CEC69889247D9B2100F27037 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
 				CEC6988A247D9B4300F27037 /* protocol */,
 				CEC6988F247D9B9700F27037 /* LoginPresenter.swift */,
+				CE8A1C71247E959A001A4270 /* HomePresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -363,10 +380,13 @@
 				04898443242767AF002A4557 /* loadingExtensions.swift in Sources */,
 				CEC69893247D9E2800F27037 /* Utils.swift in Sources */,
 				CEC6988E247D9B7600F27037 /* generalLoading.swift in Sources */,
+				CE8A1C79247FD3A7001A4270 /* SavecoreRequest.swift in Sources */,
 				CE88869F2478B99B00B63652 /* Payme.xcdatamodeld in Sources */,
 				CEC69890247D9B9700F27037 /* LoginPresenter.swift in Sources */,
 				CE88869B2478725C00B63652 /* HomeViewController.swift in Sources */,
 				04DCB32F2421A8B20023E704 /* ViewExtension.swift in Sources */,
+				CE8A1C72247E959A001A4270 /* HomePresenter.swift in Sources */,
+				CE8A1C76247F0F83001A4270 /* CoreDataStack.swift in Sources */,
 				CE88869024783EA400B63652 /* BMHelper.swift in Sources */,
 				0411CE21242177BF00AE327C /* SceneDelegate.swift in Sources */,
 				0489844524276E9B002A4557 /* toastExtension.swift in Sources */,

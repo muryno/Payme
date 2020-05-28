@@ -44,7 +44,7 @@ class MemoryManager {
 
            let currentLevelKey = "currentLevel"
         
-        if let configurationData = UserDefaults.standard.value(forKeyPath: currentLevelKey) as? Data{
+           if let configurationData = UserDefaults.standard.value(forKeyPath: currentLevelKey) as? Data{
             
             do {  let dataResult = try  JSONDecoder().decode(User.self, from: configurationData)
                 return dataResult

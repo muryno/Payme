@@ -8,8 +8,12 @@
 
 import UIKit
 import Firebase
+import CoreData
 
-class LoginViewController: UIViewController , LoginView{
+class LoginViewController: UIViewController , LoginView, ManageObjectContextDependentType{
+    
+    var managedObjectContext: NSManagedObjectContext!
+    
 
     var presenter : LoginPresenter!
 
@@ -35,17 +39,24 @@ class LoginViewController: UIViewController , LoginView{
         
         
         
-      FirebaseApp.configure()
+     // FirebaseApp.configure()
         
-      userLoggedIn()
-       }
+ 
+   }
     
   
 
     func userLoggedIn(){
-        if  MemoryManager().getUser().authorization != nil ||  MemoryManager().getUser().authorization != "" {
-                   performSegue(withIdentifier: "goHome", sender: nil)
-            }
+        
+         let token = MemoryManager().getUser().authorization  ?? ""
+        
+        if token != "" {
+         performSegue(withIdentifier: "goHome", sender: nil)
+        }
+        
+        
+       
+       
     }
        
     @IBAction func btn_click(_ sender: Any) {
@@ -103,10 +114,35 @@ class LoginViewController: UIViewController , LoginView{
        
 
 
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goHome" {
+         if let barVC = segue.destination as? UITabBarController {
+                   barVC.viewControllers?.forEach {
+                      if let nc = $0 as? UINavigationController {
+                      let vc = nc.viewControllers[0]  as?    HomeControllerViewController
+                      vc?.managedObjectContext  =  self.managedObjectContext
+                        
+                            
+                      vc?.testmen = "Biolaa"
+                        }
+                   }
+               }
+        }
+    }
 
      
         
-    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        DispatchQueue.main.async {
+         self.userLoggedIn()
+            NotificationCenter.default.removeObserver(self)
+        }
+             
+    }
     
 }
 
