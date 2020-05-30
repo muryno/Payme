@@ -26,6 +26,7 @@
 		CE8A1C72247E959A001A4270 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A1C71247E959A001A4270 /* HomePresenter.swift */; };
 		CE8A1C76247F0F83001A4270 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A1C75247F0F83001A4270 /* CoreDataStack.swift */; };
 		CE8A1C79247FD3A7001A4270 /* SavecoreRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A1C78247FD3A7001A4270 /* SavecoreRequest.swift */; };
+		CE8A1CBD248302E7001A4270 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A1CBC248302E6001A4270 /* DetailViewController.swift */; };
 		CEC6988C247D9B6000F27037 /* loginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988B247D9B6000F27037 /* loginProtocol.swift */; };
 		CEC6988E247D9B7600F27037 /* generalLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988D247D9B7600F27037 /* generalLoading.swift */; };
 		CEC69890247D9B9700F27037 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6988F247D9B9700F27037 /* LoginPresenter.swift */; };
@@ -58,6 +59,7 @@
 		CE8A1C71247E959A001A4270 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		CE8A1C75247F0F83001A4270 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		CE8A1C78247FD3A7001A4270 /* SavecoreRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavecoreRequest.swift; sourceTree = "<group>"; };
+		CE8A1CBC248302E6001A4270 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CEC6988B247D9B6000F27037 /* loginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginProtocol.swift; sourceTree = "<group>"; };
 		CEC6988D247D9B7600F27037 /* generalLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generalLoading.swift; sourceTree = "<group>"; };
 		CEC6988F247D9B9700F27037 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				CEC698A3247E53BF00F27037 /* Table view cells */,
 				0411CE22242177BF00AE327C /* LoginViewController.swift */,
 				CE88869A2478725C00B63652 /* HomeViewController.swift */,
+				CE8A1CBC248302E6001A4270 /* DetailViewController.swift */,
 			);
 			path = UIController;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				CEC69893247D9E2800F27037 /* Utils.swift in Sources */,
 				CEC6988E247D9B7600F27037 /* generalLoading.swift in Sources */,
 				CE8A1C79247FD3A7001A4270 /* SavecoreRequest.swift in Sources */,
+				CE8A1CBD248302E7001A4270 /* DetailViewController.swift in Sources */,
 				CE88869F2478B99B00B63652 /* Payme.xcdatamodeld in Sources */,
 				CEC69890247D9B9700F27037 /* LoginPresenter.swift in Sources */,
 				CE88869B2478725C00B63652 /* HomeViewController.swift in Sources */,
