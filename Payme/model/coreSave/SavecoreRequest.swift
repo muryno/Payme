@@ -35,9 +35,11 @@ struct saveCoreRequest: ManageObjectContextDependentType{
             
             if req.count > 0 {
                 
-                let request = NSEntityDescription.insertNewObject(forEntityName: Request.entityName,
-                                                                                       into: self.managedObjectContext) as! Request
+              
                 for  rqvalue in  req  {
+                    
+                    let request = NSEntityDescription.insertNewObject(forEntityName: Request.entityName,
+                                                                                                         into: self.managedObjectContext) as! Request
                     
                     request.account_name = rqvalue.account_name
                        request.account_no = rqvalue.account_no
@@ -61,9 +63,7 @@ struct saveCoreRequest: ManageObjectContextDependentType{
                 
                     do {
                         try self.managedObjectContext.save()
-                        
-                      //  self.FetchData()
-                        
+//                        self.FetchData()
                         } catch {
                             self.managedObjectContext.rollback()
                       }
@@ -72,7 +72,7 @@ struct saveCoreRequest: ManageObjectContextDependentType{
                 
                 // print("Na mebe \(error)")
                     
-         
+          // self.FetchData()
             }
         
             
@@ -85,6 +85,7 @@ struct saveCoreRequest: ManageObjectContextDependentType{
     func FetchData(){
         let data =  NSFetchRequest<Request>(entityName: Request.entityName)
         do{
+            data.returnsObjectsAsFaults = false
             let dataResult = try managedObjectContext.fetch(data)
              print("Oga na me be this \(dataResult)")
         }catch{

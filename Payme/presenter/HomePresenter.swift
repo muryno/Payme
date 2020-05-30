@@ -35,7 +35,7 @@ class HomePresenter{
                          guard let request = response.value else { return }
                          
                          if !request.error! &&  request.data != nil {
-                        //  print(" See mee oga \( request.data)")
+                     //     print(" See mee oga \( mainContext)")
                         
                         
                        

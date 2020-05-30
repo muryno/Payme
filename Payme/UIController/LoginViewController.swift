@@ -44,20 +44,7 @@ class LoginViewController: UIViewController , LoginView, ManageObjectContextDepe
  
    }
     
-  
 
-    func userLoggedIn(){
-        
-         let token = MemoryManager().getUser().authorization  ?? ""
-        
-        if token != "" {
-         performSegue(withIdentifier: "goHome", sender: nil)
-        }
-        
-        
-       
-       
-    }
        
     @IBAction func btn_click(_ sender: Any) {
 
@@ -78,7 +65,8 @@ class LoginViewController: UIViewController , LoginView, ManageObjectContextDepe
        }
        
         func LoadingSuccessfull(msg: String) {
-                   performSegue(withIdentifier: "goHome", sender: nil)
+             
+            userLoggedIn()
                 displayMessage(status : true, msg : msg)
               self.removeSpinner()
 
@@ -116,22 +104,32 @@ class LoginViewController: UIViewController , LoginView, ManageObjectContextDepe
 
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "goHome" {
-         if let barVC = segue.destination as? UITabBarController {
-                   barVC.viewControllers?.forEach {
-                      if let nc = $0 as? UINavigationController {
-                      let vc = nc.viewControllers[0]  as?    HomeControllerViewController
-                      vc?.managedObjectContext  =  self.managedObjectContext
-                        
-                            
-                      vc?.testmen = "Biolaa"
-                        }
-                   }
-               }
-        }
-    }
+      func userLoggedIn(){
+          
+           let token = MemoryManager().getUser().authorization  ?? ""
+          
+          if token != "" {
+            
+          
+               let tabBarViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBarControllerIdentifier") as! UITabBarController
+              
+                   tabBarViewController.viewControllers?.forEach {
+                                   if let nc = $0 as? UINavigationController {
+                                   let vc = nc.viewControllers[0]  as?    HomeControllerViewController
+                                   vc?.managedObjectContext  =  self.managedObjectContext
+                                     
+                                         
+                                   vc?.testmen = "Biolaa"
+                                     }
+                                }
+
+                     view.window?.rootViewController = tabBarViewController
+                   //  view.window?.makeKeyAndVisible()
+          }
+      
+      }
+    
+   
 
      
         

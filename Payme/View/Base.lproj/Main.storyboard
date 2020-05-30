@@ -92,7 +92,6 @@
                     <connections>
                         <outlet property="edt_email" destination="VrC-Sq-7F1" id="kHb-sh-ruU"/>
                         <outlet property="edt_pass" destination="SFe-Rm-pWZ" id="lRt-sK-zhQ"/>
-                        <segue destination="vga-F7-8rY" kind="show" identifier="goHome" id="yGN-Ne-Ged"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,7 +103,7 @@
             <objects>
                 <viewController id="ytl-FK-enb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RGf-Um-4Uu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="JPw-Rg-2eW"/>
@@ -122,7 +121,7 @@
             <objects>
                 <viewController id="zNB-Vg-LJj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ogI-QW-ZHk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="MDO-9u-iwL"/>
@@ -133,12 +132,12 @@
             </objects>
             <point key="canvasLocation" x="8.8000000000000007" y="638.2308845577212"/>
         </scene>
-        <!--Home Controller View Controller-->
+        <!--Pending Request-->
         <scene sceneID="bFE-h6-UJY">
             <objects>
                 <tableViewController id="Pme-jJ-WiR" customClass="HomeControllerViewController" customModule="Payme" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IUZ-xb-jkE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -246,18 +245,25 @@
                             <outlet property="delegate" destination="Pme-jJ-WiR" id="PSh-7v-lmf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="G4b-cL-uHG"/>
+                    <navigationItem key="navigationItem" title="Pending Request" largeTitleDisplayMode="never" id="G4b-cL-uHG">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="fIu-9q-7BV">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="IUZ-xb-jkE" id="mns-Ag-qLZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9b-9v-CJq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2221.5999999999999" y="-225.33733133433284"/>
+            <point key="canvasLocation" x="2078" y="-155"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NdT-cp-gnE">
             <objects>
-                <tabBarController id="vga-F7-8rY" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarControllerIdentifier" id="vga-F7-8rY" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="00H-0w-c0W"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E12-PI-MgM">
+                    <tabBar key="tabBar" contentMode="scaleToFill" restorationIdentifier="tabBarControllerIdentifier" insetsLayoutMarginsFromSafeArea="NO" id="E12-PI-MgM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,12 +287,12 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Gn-o4-7Yf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Pme-jJ-WiR" kind="relationship" relationship="rootViewController" id="ByI-H1-phb"/>
+                        <segue destination="Pme-jJ-WiR" kind="relationship" relationship="rootViewController" id="HRD-SF-vs2"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsS-W0-st1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
