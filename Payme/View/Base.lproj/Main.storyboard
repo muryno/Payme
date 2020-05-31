@@ -319,6 +319,10 @@
                                                 <rect key="frame" x="20" y="168" width="335" height="37"/>
                                                 <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </pageControl>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jJ0-bY-XdJ">
+                                                <rect key="frame" x="20" y="335" width="335" height="143"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -355,6 +359,7 @@
                     <connections>
                         <outlet property="pageView" destination="w4l-Zh-9hy" id="0jN-BT-2BE"/>
                         <outlet property="sliderCollectionView" destination="Nnb-sB-PZk" id="9t7-vn-mzL"/>
+                        <outlet property="testImg" destination="jJ0-bY-XdJ" id="cn8-Hj-SNn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMI-WP-OID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
