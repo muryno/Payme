@@ -19,10 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
        
         
-        let mainContext = createMainContext()
-
-         let vc = window?.rootViewController as! LoginViewController
-        vc.managedObjectContext = mainContext
+//        let mainContext = createMainContext()
+//
+//         let vc = window?.rootViewController as! LoginViewController
+//        vc.managedObjectContext = mainContext
         
         guard let _ = (scene as? UIWindowScene) else { return }
     }

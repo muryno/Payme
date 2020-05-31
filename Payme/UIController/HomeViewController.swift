@@ -115,6 +115,8 @@ class HomeControllerViewController: UIViewController,UITableViewDataSource ,Gene
     
     
     override func viewDidAppear(_ animated: Bool) {
+        
+         FetchData()
         presenter = HomePresenter(callBack: self)
         presenter.getRequest(mainContext: self.managedObjectContext)
         
