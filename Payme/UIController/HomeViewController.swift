@@ -35,6 +35,8 @@ class HomeControllerViewController: UIViewController,UITableViewDataSource ,Gene
         
         tableView.dataSource  = self
         
+        
+        tableView.estimatedSectionFooterHeight  = tableView.rowHeight
 
     }
     

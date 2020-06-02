@@ -34,7 +34,6 @@ class DetailViewController: UIViewController {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfZkpvOapESbICpZN0USjTjLErH1kwpOdeZvKj-lEo3gZZTkjH&usqp=CAU"
     ]
    
-    @IBOutlet weak var testImg: UIImageView!
     
     var timer = Timer()
     var counter = 0

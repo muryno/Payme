@@ -56,7 +56,11 @@ class LoginViewController: UIViewController , LoginView, ManageObjectContextDepe
       
     
        func Loading() {
-             self.showSpinner(onView: self.view)
+        if #available(iOS 13.0, *) {
+            self.showSpinner(onView: self.view)
+        } else {
+            // Fallback on earlier versions
+        }
        }
        
        func LoadingFail(msg: String) {
